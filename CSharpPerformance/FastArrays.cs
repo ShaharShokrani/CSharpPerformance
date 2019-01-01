@@ -12,7 +12,7 @@ namespace CSharpPerformance
         // constants
         private const int numElements = 1000;
 
-        public static long MeasureA()
+        public static double MeasureA()
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
@@ -22,10 +22,10 @@ namespace CSharpPerformance
                 list[i] = i;
             }
             stopwatch.Stop();
-            return stopwatch.ElapsedMilliseconds;
+            return stopwatch.Elapsed.TotalMilliseconds;
         }
 
-        public static long MeasureB()
+        public static double MeasureB()
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
@@ -38,10 +38,10 @@ namespace CSharpPerformance
                 }
             }
             stopwatch.Stop();
-            return stopwatch.ElapsedMilliseconds;
+            return stopwatch.Elapsed.TotalMilliseconds;
         }
 
-        public static long MeasureC()
+        public static double MeasureC()
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
@@ -58,19 +58,25 @@ namespace CSharpPerformance
                 }
             }
             stopwatch.Stop();
-            return stopwatch.ElapsedMilliseconds;
+            return stopwatch.Elapsed.TotalMilliseconds;
         }
 
         public static void Run()
         {
             // measurement run
-            long duration1 = MeasureA();
-            long duration2 = MeasureB();
-            long duration3 = MeasureC();
+            double duration1 = MeasureA();
+            double duration2 = MeasureB();
+            double duration3 = MeasureC();
 
             Console.WriteLine("int[]: {0}", duration1);
             Console.WriteLine("int[,]: {0}", duration2);
             Console.WriteLine("int[][]: {0}", duration3);
+
+            /*
+                int[]: 7.01
+                int[,]: 8.15
+                int[][]: 7.84
+             */
         }
 
     }
