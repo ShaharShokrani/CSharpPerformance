@@ -10,9 +10,14 @@ namespace CSharpPerformance
     {
         static void Main(string[] args)
         {
-            BoxingAndUnboxing.Run();
-
-
+            if (false)
+            {
+                BoxingAndUnboxing.Run();
+            }
+            if (true)
+            {
+                FastStringConcatination.Run();
+            }
         }
     }
 }
