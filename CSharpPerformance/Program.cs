@@ -18,11 +18,14 @@ namespace CSharpPerformance
             {
                 FastStringConcatination.Run();
             }
-            if (true)
+            if (false)
             {
                 ArrayListVsGenericVsNative.Run();
             }
-
+            if (true)
+            {
+                FastArrays.Run();
+            }
         }
     }
 }

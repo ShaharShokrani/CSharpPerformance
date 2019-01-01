@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ArrayListVsGenericVsNative.cs" />
     <Compile Include="BoxingAndUnboxing.cs" />
+    <Compile Include="FastArrays.cs" />
     <Compile Include="FastStringConcatination.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
