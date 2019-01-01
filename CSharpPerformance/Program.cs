@@ -14,10 +14,15 @@ namespace CSharpPerformance
             {
                 BoxingAndUnboxing.Run();
             }
-            if (true)
+            if (false)
             {
                 FastStringConcatination.Run();
             }
+            if (true)
+            {
+                ArrayListVsGenericVsNative.Run();
+            }
+
         }
     }
 }
