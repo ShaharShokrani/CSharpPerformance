@@ -22,9 +22,13 @@ namespace CSharpPerformance
             {
                 ArrayListVsGenericVsNative.Run();
             }
-            if (true)
+            if (false)
             {
                 FastArrays.Run();
+            }
+            if (true)
+            {
+                Exceptions1.Run();
             }
         }
     }
