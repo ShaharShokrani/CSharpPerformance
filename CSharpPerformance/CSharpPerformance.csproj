@@ -51,6 +51,7 @@
     <Compile Include="FastArrays.cs" />
     <Compile Include="FastStringConcatination.cs" />
     <Compile Include="ForVsForeach.cs" />
+    <Compile Include="GarbageCollectorGenZero2.cs" />
     <Compile Include="GarbageCollectorGenZero1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

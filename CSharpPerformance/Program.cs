@@ -42,9 +42,13 @@ namespace CSharpPerformance
             {
                 ForVsForeach.Run();
             }
-            if (true)
+            if (false)
             {
                 GarbageCollectorGenZero1.Run();
+            }
+            if (true)
+            {
+                GarbageCollectorGenZero2.Run();
             }
         }
 
