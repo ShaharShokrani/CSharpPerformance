@@ -49,9 +49,9 @@ namespace CSharpPerformance
             {
                 list.Add(i);
             }
-            stopwatch.Stop();
-
+            
             Console.WriteLine(myClass.ToString());
+            stopwatch.Stop();
             return stopwatch.Elapsed.TotalMilliseconds;
         }
 
@@ -68,12 +68,12 @@ namespace CSharpPerformance
             {
                 list.Add(i);
             }
-            stopwatch.Stop();
 
-            
             MyClass myClass = new MyClass(DateTime.MinValue, "MyName", 32);
             Console.WriteLine(myClass.ToString());
             myClass = null;
+
+            stopwatch.Stop();
             return stopwatch.Elapsed.TotalMilliseconds;
         }
 
@@ -96,10 +96,10 @@ namespace CSharpPerformance
             Console.WriteLine("Near performance is {0} times faster than Far.", farDuration / nearDuration);
 
             /*
-                Far: 33.6357
-                Near: 31.9121
+                Far: 34.7897
+                Near: 30.7786
 
-                Near performance is 1.05401086108404 times faster than Far.
+                Near performance is 1.13032106723503 times faster than Far.
              */
         }
     }
