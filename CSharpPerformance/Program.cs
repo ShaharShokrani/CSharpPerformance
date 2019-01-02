@@ -34,9 +34,13 @@ namespace CSharpPerformance
             {
                 Exceptions2.Run();
             }
-            if (true)
+            if (false)
             {
                 Exceptions3.Run();
+            }
+            if (true)
+            {
+                ForVsForeach.Run();
             }
         }
     }

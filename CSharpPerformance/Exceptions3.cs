@@ -81,14 +81,14 @@ namespace CSharpPerformance
 
             Console.WriteLine("Lookup: {0}", duration1);
             Console.WriteLine("Lookup with check: {0}", duration2);
-
+            Console.WriteLine();
             Console.WriteLine("Lookup with check: performance is {0} than Lookup without check", duration1 / duration2);
 
             /*
                 Lookup: 1552
                 Lookup with check: 19
                 Lookup with check: performance is 81 than Lookup without check
-             * /
+             */
         }
     }
 }

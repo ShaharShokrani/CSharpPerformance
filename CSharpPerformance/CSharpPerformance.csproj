@@ -50,6 +50,7 @@
     <Compile Include="Exceptions1.cs" />
     <Compile Include="FastArrays.cs" />
     <Compile Include="FastStringConcatination.cs" />
+    <Compile Include="ForVsForeach.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
