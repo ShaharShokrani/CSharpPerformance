@@ -26,9 +26,13 @@ namespace CSharpPerformance
             {
                 FastArrays.Run();
             }
-            if (true)
+            if (false)
             {
                 Exceptions1.Run();
+            }
+            if (true)
+            {
+                Exceptions2.Run();
             }
         }
     }
