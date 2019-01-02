@@ -46,9 +46,13 @@ namespace CSharpPerformance
             {
                 GarbageCollectorGenZero1.Run();
             }
-            if (true)
+            if (false)
             {
                 GarbageCollectorGenZero2.Run();
+            }
+            if (true)
+            {
+                GarbageCollectorGenZero3.Run();
             }
         }
 
