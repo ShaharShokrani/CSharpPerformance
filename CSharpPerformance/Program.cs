@@ -38,10 +38,35 @@ namespace CSharpPerformance
             {
                 Exceptions3.Run();
             }
-            if (true)
+            if (false)
             {
                 ForVsForeach.Run();
             }
+            if (true)
+            {
+                GarbageCollectorGenZero1.Run();
+            }
         }
+
+        public static IDictionary<char, int> GetCharacterCount(string name)
+        {
+            var result = new Dictionary<char, int>();
+            name = name.ToLower();
+
+            foreach (char c in name)
+            {
+                if (Char.IsWhiteSpace(c))
+                {
+                    continue;
+                }
+
+                if (!result.ContainsKey(c))
+                    result.Add(c, 1);
+                else
+                    result[c]++;
+            }
+            return result;
+        }
+
     }
 }

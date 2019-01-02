@@ -1,0 +1,7 @@
+ 1. Object are either short-lived or Long-lived.
+ 2. Short-lived objects will be allocated and discarded within a single collcetion cycle.
+ 3. Objects that survive two collection cycles are long-lived.
+ 4. 90% of all small objects are short-lived.
+ 5. All large objects (85k+) are long-lived.
+
+- Do not go againts these assumptions.
