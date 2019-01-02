@@ -30,9 +30,13 @@ namespace CSharpPerformance
             {
                 Exceptions1.Run();
             }
-            if (true)
+            if (false)
             {
                 Exceptions2.Run();
+            }
+            if (true)
+            {
+                Exceptions3.Run();
             }
         }
     }
