@@ -58,9 +58,17 @@ namespace CSharpPerformance
             {
                 GarbageCollectorLifetime1.Run();
             }
-            if (true)
+            if (false)
             {
                 GarbageCollectorLifetime2.Run();
+            }
+            if (true)
+            {
+                //IEnumarableVsList.Run();
+            }
+            if (true)
+            {
+                DistinctByObjectVsString.Run();
             }
         }
 

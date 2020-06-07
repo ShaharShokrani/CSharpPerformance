@@ -50,6 +50,8 @@
     <Compile Include="Exceptions1.cs" />
     <Compile Include="FastArrays.cs" />
     <Compile Include="FastStringConcatination.cs" />
+    <Compile Include="DistinctByObjectVsString.cs" />
+    <Compile Include="IEnumarableVsList.cs" />
     <Compile Include="ForVsForeach.cs" />
     <Compile Include="GarbageCollectorLifetime2.cs" />
     <Compile Include="GarbageCollectorLifetime1.cs" />
